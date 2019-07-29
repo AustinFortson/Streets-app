@@ -1,0 +1,22 @@
+#appBar {
+    background-color: #f4f6f0;
+    color: #485550;
+}
+
+a {
+    text-decoration: none;
+    color: #485550
+}
+
+a:active, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#slash {
+    margin-left: 1em;
+    margin-right: 1em;
+}

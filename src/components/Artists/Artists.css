@@ -1,0 +1,96 @@
+.artistCard {
+    flex-grow: 1;
+    margin-bottom: 3em;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.paper {
+    padding: 2em;
+    margin: auto;
+    max-width: 500px;
+}
+
+.imageHolder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+#image-section {
+    border-bottom: solid 1px lightgrey;
+}
+
+#userName {
+    font-size: 2rem;
+}
+
+#city {
+    font-size: 1rem;
+}
+
+.description {
+    text-align: center;
+    height: 100px;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    overflow-y: inherit;
+}
+
+#soundCloudButton {
+    background-color: #f50;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#soundCloudButton:hover {
+    opacity: .7;
+}
+
+
+#artistGrid {
+    margin: 0 auto;
+    width: auto
+}
+
+#city-input {
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.searchName {
+    display: inline-block;
+}
+
+#searchIcon {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+#searchIcon:hover {
+    opacity: .7;    
+}
+
+#formGrid{
+    margin-top: 3em;
+    color: #29293917;
+}
+
+.city-display{
+    text-align: center;
+}
+
