@@ -30,7 +30,7 @@ export default class Artists extends React.Component {
     //Taking In User Input And Giving API Results
     onSubmit = event => {
         event.preventDefault();
-        axios.get('http://api.soundcloud.com/users?q=' + this.state.city +'&client_id=95f22ed54a5c297b1c41f72d713623ef&limit=200')
+        axios.get('https://api.soundcloud.com/users?q=' + this.state.city +'&client_id=95f22ed54a5c297b1c41f72d713623ef&limit=200')
         .then(res => {
             console.log(res);
             this.setState({ city: city, artists: res.data, });
