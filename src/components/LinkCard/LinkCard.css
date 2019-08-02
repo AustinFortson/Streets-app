@@ -1,0 +1,14 @@
+.root {
+    flex-grow: 1;
+}
+
+.title {
+    text-align: center;
+    font-size: 2em;
+    border-bottom: solid white 2px;
+}
+
+.description {
+    padding: 2px;
+    overflow: visible;
+}

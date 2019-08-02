@@ -1,3 +1,27 @@
+.background {
+    width: 100%;
+    height: 100%;
+}
+
+.page-bg {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #5e96ae;
+}
+
+.page-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold 700;
+    font-size: 9vw;
+    text-align: center;
+}
+
 .artistCard {
     flex-grow: 1;
     margin-bottom: 3em;
@@ -40,6 +64,10 @@
     font-size: 1rem;
 }
 
+#followers, #trackCount, #playListCount, #repostCount {
+    color: #cecece
+}
+
 .description {
     text-align: center;
     height: 100px;
@@ -48,6 +76,12 @@
     text-overflow: ellipsis; 
     overflow-y: inherit;
 }
+
+#artistpaper {
+    background-color: black;
+    color: white;
+}
+
 
 #soundCloudButton {
     background-color: #f50;
@@ -62,14 +96,30 @@
 
 #artistGrid {
     margin: 0 auto;
-    width: auto
+    width: auto;
+    display: block;
 }
 
 #city-input {
     width: 100%;
     height: 2rem;
     font-size: 1rem;
-}
+    background-color: black;
+    color: white;
+} 
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }
 
 .searchName {
     display: inline-block;
@@ -86,8 +136,12 @@
 }
 
 #formGrid{
-    margin-top: 3em;
     color: #29293917;
+}
+
+#formpaper{
+    background-color: black;
+    color: white;
 }
 
 .city-display{

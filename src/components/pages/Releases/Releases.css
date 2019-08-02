@@ -1,0 +1,50 @@
+#newReleasesGrid {
+    display: flex;
+    width: 100%;
+}
+
+#newReleaseCard {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    flex: 1
+}
+
+.nameOfArtist, .nameOfAlbum{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nameOfArtist:hover, .nameOfAlbum:hover{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .7;
+}
+
+
+.nameOfArtist:link, .nameOfAlbum:link, .nameOfArtist:visited, .nameOfAlbum:visited { 
+    color: #1DB954;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.nameOfArtist {
+    font-size: 2em;
+    text-align: center;
+    overflow: inherit;
+}
+
+.nameOfAlbum {
+    font-size: 1.5em;
+    text-align: center;
+    overflow: inherit;
+    font-style: italic; 
+}
+
+.coverArt {
+    width: 80%;
+}

@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import { Link } from "react-router-dom";
 import './Appbar.css'
 
 
@@ -31,11 +32,13 @@ export default function SimpleAppBar(props) {
       <ElevationScroll {...props}>
         <AppBar id="appBar">
           <Toolbar>
-            <Typography variant="h5"><a href="/#">Home</a></Typography>
+            <Typography variant="h5"><Link to="/" id="name">STREETS</Link></Typography>
             <Typography variant="h5" id="slash">/</Typography>
-            <Typography variant="h5"><a href="/#">Artists</a></Typography>
+            <Typography variant="h5" id="links"><Link to="/Artists" id="appBarATag">Artists</Link></Typography>
             <Typography variant="h5" id="slash">/</Typography>
-            <Typography variant="h5"><a href="/#">Events</a></Typography>   
+            <Typography variant="h5" id="links"><Link to="/Events" id="appBarATag">Events</Link></Typography>
+            <Typography variant="h5" id="slash">/</Typography>
+            <Typography variant="h5" id="links"><Link to="/Releases" id="appBarATag">New Releases</Link></Typography> 
           </Toolbar>    
         </AppBar>
       </ElevationScroll>
@@ -43,3 +46,4 @@ export default function SimpleAppBar(props) {
       </React.Fragment>
   );
 }
+

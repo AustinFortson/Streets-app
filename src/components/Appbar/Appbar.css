@@ -1,22 +1,57 @@
 #appBar {
-    background-color: #f4f6f0;
-    color: #485550;
+    background-color: black;
+    color: #ffffff;
 }
 
-a {
-    text-decoration: none;
-    color: #485550
-}
 
-a:active, a:visited {
+#appBarATag {
+    color: #ffffff;
     text-decoration: none;
 }
 
-a:hover {
+#appBarATag:active, #appBarATag:visited {
+    text-decoration: none;
+}
+
+#appBarATag:hover {
     text-decoration: underline;
 }
 
 #slash {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: .5em;
+    margin-right: .5em;
+    font-size: 2em;
+} 
+@media screen and (max-width: 600px) {
+    #slash {
+       font-size: 1em;
+    }
+  }
+
+
+#name {
+    margin-right: .5em;
+    font-family: 'Baloo Chettan', cursive;
+    font-size: 2.1em;
+    text-decoration: none;
+    color: white;
 }
+@media screen and (max-width: 600px) {
+    #name {
+       font-size: 1.1em;
+    }
+  }
+
+#name:hover {
+    text-decoration: none;
+}
+
+#links {
+    font-size: 2em;
+}
+
+@media screen and (max-width: 600px) {
+    #links {
+       font-size: 1em;
+    }
+  }
