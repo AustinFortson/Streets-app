@@ -9,7 +9,7 @@ var spotifyApi = new SpotifyWebApi({
   clientSecret: 'd5e53be2a8884da3830220ca784a8129',
 });
 
-spotifyApi.setAccessToken('BQC1cyjqWGdn2JaFqFTCnNKr9yWjUilArA_mKPpCcHMRlT2w31_UvV5hczARV88bBjgFUrRrIDJJedIkDD5fPqFuH_3BxWbtLQx_50pdKP__789aX6-6C2xjQ5GlNDhOytQbHitr4tQIulWn9y8');
+spotifyApi.setAccessToken('BQAKzwMFHj-C2TLskaJSIdt_GykYIf8kgUkcctqNeuX1sd5nGxA0Gs7Mocb5hmAqNA2FMbLSe4HIsbfVeSwRD-6CAiScPPH_pRjhfdSg-6UZqC0QAd_OT8ful3i8sJYJt5HKSu1zledQxbKTFHg');
 
 
 export default class Releases extends React.Component {
