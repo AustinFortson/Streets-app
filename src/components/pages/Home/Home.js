@@ -46,15 +46,15 @@ function Home() {
 
                 <Grid container id="card-grid-container">
                     <Grid item xs>
-                        <LinkCard id="artists" href="/Artists" title="Artists" desc="Search for up to 200 SoundCloud artists in any given city at a time by entering either a city name or the artist name." button="artistsbtn">
+                        <LinkCard id="artists" title="Artists" desc="Search for up to 200 SoundCloud artists in any given city at a time by entering either a city name or the artist name." link="/Artists"button="artistsbtn">
                         </LinkCard>
                     </Grid>
                     <Grid item xs>
-                        <LinkCard id="events" href="/Events" title="Events" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna" button="eventsbtn">
+                        <LinkCard id="events" title="Events" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna" link="/Events" button="eventsbtn">
                         </LinkCard>
                     </Grid>
                     <Grid item xs>
-                        <LinkCard id="playlists" href="/Releases" title="New Releases" desc="Discover new projects and artists. Browse the 50 most recent releases from Spotify." button="playlistsbtn">                             
+                        <LinkCard id="playlists" title="New Releases" desc="Discover new projects and artists. Browse the 50 most recent releases from Spotify." link="Releases" button="playlistsbtn">                             
                          </LinkCard>
                     </Grid>
                 </Grid>
