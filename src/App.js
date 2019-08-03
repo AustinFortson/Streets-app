@@ -15,9 +15,9 @@ function App() {
       <SimpleAppBar/>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/Artists" component={Artists} />
-        <Route exact path="/Events" component={Events} />
-        <Route exact path="/Releases" component={Releases} />
+        <Route  path="/artists" component={Artists} />
+        <Route  path="/events" component={Events} />
+        <Route  path="/releases" component={Releases} />
         </Switch>
     </div>
     </Router>

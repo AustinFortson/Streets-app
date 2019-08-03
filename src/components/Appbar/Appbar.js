@@ -34,11 +34,11 @@ export default function SimpleAppBar(props) {
           <Toolbar>
             <Typography variant="h5"><Link to="/" id="name">STREETS</Link></Typography>
             <Typography variant="h5" id="slash">/</Typography>
-            <Typography variant="h5" id="links"><Link to="/Artists" id="appBarATag">Artists</Link></Typography>
+            <Typography variant="h5" id="links"><Link to="/artists" id="appBarATag">Artists</Link></Typography>
             <Typography variant="h5" id="slash">/</Typography>
-            <Typography variant="h5" id="links"><Link to="/Events" id="appBarATag">Events</Link></Typography>
+            <Typography variant="h5" id="links"><Link to="/events" id="appBarATag">Events</Link></Typography>
             <Typography variant="h5" id="slash">/</Typography>
-            <Typography variant="h5" id="links"><Link to="/Releases" id="appBarATag">New Releases</Link></Typography> 
+            <Typography variant="h5" id="links"><Link to="/releases" id="appBarATag">New Releases</Link></Typography> 
           </Toolbar>    
         </AppBar>
       </ElevationScroll>
