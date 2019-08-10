@@ -54,7 +54,7 @@ export default class Artists extends React.Component {
         return (
             <div className="background">
             <React.Fragment>
-
+                {/*Search Local Artists Header*/}
                 <Grid container>
                     <Grid item xs={12}>
                     <div className="page-bg"></div>
@@ -62,62 +62,81 @@ export default class Artists extends React.Component {
                     </Grid>
                 </Grid>
                 
+                {/*Input Field*/}
                 <Grid xs={12}id="formGrid">
                     <Paper className="paper" id="formpaper">
                     <SearchIcon id="searchIcon" onClick={this.onSubmit}/>
                 <form onSubmit={this.onSubmit} id="search-form">
                 <input type="text" name="city-input" ref={input => this.city = input} onSubmit={this.onSubmit} id="city-input" placeholder="Search City or Artist (ex. Charlotte, North Carolina or J. Cole)"/>
                 </form>
-                <h3 className="city-display">Showing {this.state.artists.length} results for: {this.state.city} from SoundCloud</h3>
+                {/*Show Results Count*/}
+                <h3 className="city-display">Showing {this.state.artists.length} results for: {this.state.city} from <a href="https://soundcloud.com/discover" rel="noopener noreferrer" target="_blank" id='soundcloud-link'>SoundCloud</a></h3>
                 </Paper>
                 </Grid>
-
+ 
+            {/*Artist Card*/}
             <Grid container item xs={12} md={9} id="artistGrid">
             {this.state.artists.map(artists =>
             <div className="artistCard" item xs={12} key={artists.id}>
+                
                 <Paper className="paper" id="artistpaper">
                     <Grid container spacing={2}>
+
                         <Grid item xs={12} id="image-section">
+                            {/*Artist's Avatar*/}
                             <div className ="imageHolder">
                                 <img className="img" alt="avatar" src={artists.avatar_url} />
                             </div>
                         </Grid>
+
                         <Grid item xs={12} sm container>
                             <Grid item xs container direction="column" spacing={2}>
                                 <Grid item xs>
+                                    {/*Artist's Name*/}
                                     <Typography gutterBottom variant="subtitle1" id="userName">
                                         {artists.username}
                                     </Typography>
+                                    {/*Artist's City*/}
                                     <Typography variant="body2" gutterBottom id="city">
                                         City: {artists.city}
                                     </Typography>
+                                    {/*Artist's Follower Count*/}
                                     <Typography variant="body2" id="followers">
                                         Followers: {artists.followers_count}
                                     </Typography>
+                                    {/*Artist's Track Count*/}
                                     <Typography variant="body2" id="trackCount">
                                         Track Count: {artists.track_count}
                                     </Typography>
+                                    {/*Artist's Playlist Count*/}
                                     <Typography variant="body2" id="playListCount">
                                         Playlist Count: {artists.playlist_count}
                                     </Typography>
+                                    {/*Artist's Repost Count*/}
                                     <Typography variant="body2" id="repostCount">
                                         Reposts Count: {artists.reposts_count}
                                     </Typography>
                                 </Grid>
+                                
                                 <Grid item xs>
+                                    {/*Artist's Description*/}
                                     <Typography className="description">
                                         {artists.description}
                                     </Typography>
                                 </Grid>
+
                                 <Grid item>
+                                    {/*Button To Link To Artist's SoundCloud*/}
                                     <Typography>
                                     <Button variant="contained" id="soundCloudButton" href={artists.permalink_url} target="_blank">
                                         SoundCloud
                                     </Button>
                                 </Typography>
                                 </Grid>
+
                             </Grid>
                         </Grid>
+
                     </Grid>
                 </Paper>
             </div>)}

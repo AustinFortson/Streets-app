@@ -39,7 +39,7 @@ function Home() {
                 <Grid item xs={6}>
                     <Container>
                     <p className="about-us-content">Streets is a place dedicated to helping you find local musicians and music events.</p>
-                    <p className="about-us-content">With the resources of SoundCloud, Spotify, and EventBrite you can find your new favorite artist by searching your city or the artist directly.</p>
+                    <p className="about-us-content">With the resources of SoundCloud, Spotify, and Ticketmaster you can find your new favorite artist by searching your city or the artist directly, find local music events and find new releases.</p>
                     </Container>
                 </Grid>
             </Grid>
@@ -50,7 +50,7 @@ function Home() {
                         </LinkCard>
                     </Grid>
                     <Grid item xs>
-                        <LinkCard id="events" title="Events" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna" link="/Events" button="eventsbtn">
+                        <LinkCard id="events" title="Events" desc="Search up to 20 local music events at a time from Ticketmaster by searching the city you're in." link="/Events" button="eventsbtn">
                         </LinkCard>
                     </Grid>
                     <Grid item xs>

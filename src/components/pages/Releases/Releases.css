@@ -1,17 +1,23 @@
 #newReleasesGrid {
+    margin: 0 auto;
     display: flex;
-    width: 100%;
+    flex-grow: 1;
 }
 
 #newReleaseCard {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-bottom: 3rem;
+    position: relative;
+    text-align: center;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin-top: 3em;
+    color: white;
+}
+
+#newReleasePaper{
     padding: 1em;
+    height: 100%;
     background-color: black;
     color: white;
-    text-align: center;
-    flex: 1
 }
 
 .nameOfArtist, .nameOfAlbum{
@@ -33,18 +39,18 @@
   }
 
 .nameOfArtist {
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
     overflow: inherit;
 }
 
 .nameOfAlbum {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-align: center;
     overflow: inherit;
     font-style: italic; 
 }
 
 .coverArt {
-    width: 80%;
+    width: 100%;
 }

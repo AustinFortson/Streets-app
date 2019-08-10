@@ -148,3 +148,18 @@
     text-align: center;
 }
 
+#soundcloud-link {
+    text-decoration: none;
+    color: #f50
+}
+
+#soundcloud-link:active, #soundcloud-link:visited {
+    text-decoration: none;
+    color: #f50;
+}
+
+#soundcloud-link:hover {
+    text-decoration: underline;
+    opacity: .7;
+    color: #f50
+}

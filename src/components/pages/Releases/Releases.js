@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Card, Container, Tooltip  } from '@material-ui/core';
+import { Grid, Paper, Container, Tooltip, Typography  } from '@material-ui/core';
 import './Releases.css'
 
 //Spotfy Variables for API
@@ -9,7 +9,7 @@ var spotifyApi = new SpotifyWebApi({
   clientSecret: 'd5e53be2a8884da3830220ca784a8129',
 });
 
-spotifyApi.setAccessToken('BQAdp1mRwPapTdAbDkt7TPWVxeNQbzOVbEtBZTlfR4kycy9_OnVwbEJ9PGXk4fTFC3_skahnwv9jlzYINKcazs32S3Y6p5vCknFhtHijJz8a3xRcRhPJ9HTeJrnBFEPOux4P0ezMJo6-Rd5V6kw');
+spotifyApi.setAccessToken('BQBPaz-jvaGRhPtNCIsT4qq7YFxbczKTyki52YuE-tAUVyevzDj56Y6kyKWwfxujJthLmWu9Aj08xPtavAhxctmuTObFPmBE08nMuMSHvKo16dHPMfhcHeBcqHuO5E8JEq64S8wSZdkPedYpoIA');
 
 
 export default class Releases extends React.Component {
@@ -45,8 +45,8 @@ spotifyApi.getNewReleases({ limit : 50, offset: 0, country: 'US' })
                   {/*Creating A Card For Each Newly Released Project*/}
                 {this.state.newReleases.map(newReleases =>
 
-                <Grid item xs={12} sm={6} md={4} xlg={3} key={newReleases.id}>
-                  <Card id="newReleaseCard">
+                <Grid item xs={12} sm={6} md={4} xlg={3} id="newReleaseCard" key={newReleases.id}>
+                  <Paper xs={12} id="newReleasePaper">
 
                     {/*Name of artist with link to Spotify of artist*/}
                     <Container id="nameOfArtistDiv">
@@ -71,15 +71,19 @@ spotifyApi.getNewReleases({ limit : 50, offset: 0, country: 'US' })
 
                     {/*Displaying what type of proejct, how many tracks, and release date*/}
                     <Container id="releaseInfo">
-                      {newReleases.album_type}
-                      <br/>                    
-                      Tracks: {newReleases.total_tracks}
-                      <br/>
-                      Released: {newReleases.release_date}
-                      <br/> 
-                    </Container>
+                      {/*Album Type*/}
+                      <Typography id="album-type">
+                       {newReleases.album_type} 
+                      </Typography>
+                      <Typography>
+                       Tracks: {newReleases.total_tracks} 
+                      </Typography>                
+                      <Typography>
+                        Released: {newReleases.release_date} 
+                      </Typography>
+                      </Container>
 
-                      </Card>            
+                      </Paper>            
                     </Grid>
                     )}
                 </Grid>
