@@ -46,7 +46,7 @@ spotifyApi.getNewReleases({ limit : 50, offset: 0, country: 'US' })
                 {this.state.newReleases.map(newReleases =>
 
                 <Grid item xs={12} sm={6} md={4} xlg={3} id="newReleaseCard" key={newReleases.id}>
-                  <Paper xs={12} id="newReleasePaper">
+                  <Paper id="newReleasePaper">
 
                     {/*Name of artist with link to Spotify of artist*/}
                     <Container id="nameOfArtistDiv">

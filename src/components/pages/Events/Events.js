@@ -49,11 +49,11 @@ onSubmit = event => {
                   </Grid>
 
                 {/*Input Field*/}
-                <Grid xs={12}id="formGrid">
+                <Grid item xs={12}id="formGrid">
                     <Paper className="paper" id="formpaper">
                     <SearchIcon id="searchIcon" onClick={this.onSubmit}/>
                 <form onSubmit={this.onSubmit} id="search-form">
-                <input type="text" name="city-input" ref={input => this.city = input} onSubmit={this.onSubmit} id="city-input" placeholder="Search City (ex. Charlotte, North Carolina or Charlotte)"/>
+                <input type="text" name="city-input" ref={input => this.city = input} onSubmit={this.onSubmit} id="city-input" placeholder="Search City (ex. Charlotte, North Carolina)"/>
                 </form>
                 {/*Show Results Count*/}
                 <h3 className="city-display">Showing {this.state.events.length} results for: {this.state.city} from <a href="https://www.ticketmaster.com/" target="_blank" rel="noopener noreferrer" id="ticketmaster-link">Ticketmaster</a></h3>

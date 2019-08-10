@@ -63,7 +63,7 @@ export default class Artists extends React.Component {
                 </Grid>
                 
                 {/*Input Field*/}
-                <Grid xs={12}id="formGrid">
+                <Grid item xs={12}id="formGrid">
                     <Paper className="paper" id="formpaper">
                     <SearchIcon id="searchIcon" onClick={this.onSubmit}/>
                 <form onSubmit={this.onSubmit} id="search-form">
