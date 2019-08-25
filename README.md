@@ -14,3 +14,13 @@ An app designed to find local musicians in any city using Soundcloud's API, find
 
 ## Live Demo
 [https://streets.netlify.com/#/](https://streets.netlify.com/#/)
+
+
+## Project Status 
+
+### Still in development
+
+#### Bugs that need to be fixed: 
+* Plan on using React Redux to keep results on page when refreshed
+* Searches are asynchronous and one search behind need to correct problem
+* Spotify new releases feature is only active for an hour at a time due to spotify's API Token only valid for 1 hour. Plan on putting info into a database as a work around
