@@ -100,7 +100,7 @@ onSubmit = event => {
                           Starts at: {events.dates.start.localTime}
                       </Typography>
                       {/*Button To Link To Event's Ticketmaster*/}
-                      <Grid justify="center" alignItems="center" id="buttonGrid">                      
+                      <Grid container justify="center" alignItems="center" id="buttonGrid">                      
                       <Typography id="linkButton">
                       <Button variant="contained" justify="center" id="ticketmasterButton" href={events.url} target="_blank">
                           TicketMaster
