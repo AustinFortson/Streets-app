@@ -9,6 +9,9 @@ An app designed to find local musicians in any city using Soundcloud's API, find
 
 ### Still in development
 
+## Live Demo
+[https://streets-app.herokuapp.com](https://streets-app.herokuapp.com)
+
 #### Future Plans
 * Add Eventbrite api to give more diverse search of events
 
@@ -26,9 +29,6 @@ An app designed to find local musicians in any city using Soundcloud's API, find
 * MySQL Database
 * Material UI
 * SoundCloud, Ticketmaster and Spotify API
-
-## Live Demo
-[https://streets-app.herokuapp.com](https://streets-app.herokuapp.com)
 
 
 
