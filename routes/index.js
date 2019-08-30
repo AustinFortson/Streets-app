@@ -1,5 +1,6 @@
 // Dependencies
 // =============================================================
+require('dotenv').config();
 const path          = require("path");
 const express       = require('express');
 const app           = express();
@@ -9,8 +10,8 @@ const fetch         = require('node-fetch');
 const router        = require("express").Router();
 const SpotifyWebApi = require('spotify-web-api-node');
 const spotifyApi    = new SpotifyWebApi({
-    clientId: '93e8b37320b4480e8cd2ab1f94655935',
-    clientSecret: 'd5e53be2a8884da3830220ca784a8129',
+    clientId: process.env.SPOTIFY_ID,
+    clientSecret: process.env.SPOTIFY_SECRET,
   });
 spotifyApi.setAccessToken('BQBTSNYS1jFVmIE1G7MeUPCXCR97EvMK1uOAAsl71p9r6M9ODNs4XxN-uKgaPV7MAU5R8zVSL6TeixMLyc2E6cKekbeKJySS0bIrn9og4_3u5wpzGMqU6Fd-20nZaz5B5DeLVYqMe_2XU5kUkEo');
   
