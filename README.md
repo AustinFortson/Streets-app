@@ -14,6 +14,8 @@ An app designed to find local musicians in any city using Soundcloud's API, find
 
 #### Future Plans
 * Add Eventbrite api to give more diverse search of events
+* Add moment.js to convert dates
+* Play music through the site itself
 
 
 #### Bugs that need to be fixed: 
