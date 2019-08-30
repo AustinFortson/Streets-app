@@ -54,7 +54,7 @@ function Home() {
                         </LinkCard>
                     </Grid>
                     <Grid item xs>
-                        <LinkCard id="playlists" title="New Releases" desc="Discover new projects and artists. Browse the 50 most recent releases from Spotify." link="/Releases" button="playlistsbtn">                             
+                        <LinkCard id="playlists" title="New Releases" desc="Discover new projects and artists. Browse the most recent releases from Spotify." link="/Releases" button="playlistsbtn">                          
                          </LinkCard>
                     </Grid>
                 </Grid>

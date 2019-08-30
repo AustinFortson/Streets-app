@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Paper, Container, Tooltip, Typography  } from '@material-ui/core';
 import './Releases.css';
+import sqldata from '../../scripts/sqltable.json'
 
 
 export default class Releases extends React.Component {
@@ -26,6 +27,9 @@ componentDidMount() {
       }, (err => {
         console.log("Something went wrong!", err)
       }));
+
+      // Grabs from local sqldata (exported table from MySQL workbench) in case server issue
+      this.setState({newReleases: sqldata});
   };
 
   render () {
