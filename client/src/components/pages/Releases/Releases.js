@@ -1,18 +1,6 @@
 import React from "react";
 import { Grid, Paper, Container, Tooltip, Typography  } from '@material-ui/core';
 import './Releases.css';
-import axios from 'axios';
-
-
-
-//Spotfy Variables for API
-var SpotifyWebApi = require('spotify-web-api-node');
-var spotifyApi = new SpotifyWebApi({
-  clientId: '93e8b37320b4480e8cd2ab1f94655935',
-  clientSecret: 'd5e53be2a8884da3830220ca784a8129',
-});
-
-spotifyApi.setAccessToken('BQBTSNYS1jFVmIE1G7MeUPCXCR97EvMK1uOAAsl71p9r6M9ODNs4XxN-uKgaPV7MAU5R8zVSL6TeixMLyc2E6cKekbeKJySS0bIrn9og4_3u5wpzGMqU6Fd-20nZaz5B5DeLVYqMe_2XU5kUkEo');
 
 
 export default class Releases extends React.Component {
@@ -22,7 +10,13 @@ export default class Releases extends React.Component {
 
 
 componentDidMount() {
-    // Retrieve new releases
+    // // Update Spotify API which updates newreleases seed
+    // fetch('http://localhost:8080/spotifyapi')
+    // .then(res => {
+    //   return res.json();
+    // })
+
+    // Grab From sqltable and retrun on screen
     fetch('http://localhost:8080/newReleases')
       .then(res => {
         return res.json();

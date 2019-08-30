@@ -4,7 +4,7 @@ require('dotenv').config();
 const path          = require("path");
 const express       = require('express');
 const app           = express();
-const newReleases   = require("../scripts/newReleases.json")
+const newReleases   = require("../scripts/sqltable.json")
 const fs            = require('fs');
 const fetch         = require('node-fetch');
 const router        = require("express").Router();
@@ -13,7 +13,8 @@ const spotifyApi    = new SpotifyWebApi({
     clientId: process.env.SPOTIFY_ID,
     clientSecret: process.env.SPOTIFY_SECRET,
   });
-spotifyApi.setAccessToken('BQBTSNYS1jFVmIE1G7MeUPCXCR97EvMK1uOAAsl71p9r6M9ODNs4XxN-uKgaPV7MAU5R8zVSL6TeixMLyc2E6cKekbeKJySS0bIrn9og4_3u5wpzGMqU6Fd-20nZaz5B5DeLVYqMe_2XU5kUkEo');
+//Expires after 1 hour (manually have to copy and paste a new one)
+spotifyApi.setAccessToken('BQCcORWhd1_UCFzSaI2n13ZR6qehS3CKJJvITBH9sASsg2Xyi3hgyoxhFr5LCFicotIA522ws_nOirN0bfRdVM_dpK7i9TN5PoklBw5E8xh6sYbnkmI_1-nghlLe1Foiyv1oQGfDxdlbJTeTVDs');
   
   //Spotify API Route
   router.get('/spotifyapi', async (req, results) => {
@@ -37,6 +38,7 @@ spotifyApi.setAccessToken('BQBTSNYS1jFVmIE1G7MeUPCXCR97EvMK1uOAAsl71p9r6M9ODNs4X
           });
       });
   });
+
   
   //Saved New Releases Route
   router.get('/newreleases', (req, res)=> {
