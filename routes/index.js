@@ -14,7 +14,7 @@ const spotifyApi    = new SpotifyWebApi({
     clientSecret: process.env.SPOTIFY_SECRET,
   });
 //Expires after 1 hour (manually have to copy and paste a new one)
-spotifyApi.setAccessToken('BQCcORWhd1_UCFzSaI2n13ZR6qehS3CKJJvITBH9sASsg2Xyi3hgyoxhFr5LCFicotIA522ws_nOirN0bfRdVM_dpK7i9TN5PoklBw5E8xh6sYbnkmI_1-nghlLe1Foiyv1oQGfDxdlbJTeTVDs');
+spotifyApi.setAccessToken('BQBtvLZgls0hRkmDiLO_VbY7NAV-F-HwkSPoXsaYtuTia5_6AyOWTPrxfP9rPX_O5HlRNZn9Izj99j0p35rKdGFCmHPO7HgxihBx9-RqwcpkE4oqUSaCzF6Dpu-yPTjO1v50Y-g38ORIDTYpaY8');
   
   //Spotify API Route
   router.get('/spotifyapi', async (req, results) => {
